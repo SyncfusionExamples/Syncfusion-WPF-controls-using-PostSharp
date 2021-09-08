@@ -1,0 +1,26 @@
+﻿<Window x:Class="SyncfusionPostSharp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SyncfusionPostSharp" xmlns:Syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns:i="http://schemas.microsoft.com/xaml/behaviors" WindowStartupLocation="CenterScreen"
+        mc:Ignorable="d"
+        Title="" Height="600" Width="800" Name="window">
+    <Window.DataContext>
+        <local:EmployeeViewModel/>
+    </Window.DataContext>
+    <StackPanel>
+        <Syncfusion:SfDataGrid ItemsSource="{Binding Employees}" AllowEditing="True" ColumnSizer="Star">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="CellTapped">
+                    <i:InvokeCommandAction Command="{Binding CellTappedCommand}" PassEventArgsToCommand="True"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Syncfusion:SfDataGrid>
+        <TextBlock Margin="10" Text="Event Details:"/>
+        <Border Margin="10 0 10 10" HorizontalAlignment="Left" Width="700" BorderBrush="Black" BorderThickness="1">
+            <TextBlock Margin="10" Text="{Binding EmployeeEventDetail}"/>
+        </Border>
+    </StackPanel>
+</Window>

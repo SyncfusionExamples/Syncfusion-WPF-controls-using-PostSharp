@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.223
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SyncfusionPostSharp", "SyncfusionPostSharp\SyncfusionPostSharp.csproj", "{35B31AB9-0C44-4BB6-83A1-96A821155763}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35B31AB9-0C44-4BB6-83A1-96A821155763}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35B31AB9-0C44-4BB6-83A1-96A821155763}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35B31AB9-0C44-4BB6-83A1-96A821155763}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35B31AB9-0C44-4BB6-83A1-96A821155763}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5FCF9E89-7A29-4863-84B8-678A7DDE16E5}
+	EndGlobalSection
+EndGlobal
