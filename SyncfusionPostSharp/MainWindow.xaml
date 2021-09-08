@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:SyncfusionPostSharp" xmlns:Syncfusion="http://schemas.syncfusion.com/wpf"
         xmlns:i="http://schemas.microsoft.com/xaml/behaviors" WindowStartupLocation="CenterScreen"
         mc:Ignorable="d"
-        Title="" Height="600" Width="800" Name="window">
+        Title="Datagrid using PostSharp" Height="600" Width="800" Name="window">
     <Window.DataContext>
         <local:EmployeeViewModel/>
     </Window.DataContext>
